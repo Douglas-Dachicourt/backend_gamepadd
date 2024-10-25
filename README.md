@@ -73,8 +73,8 @@ npx nodemon
 ## TECH USED:
 
 - Express Server package: to run a basic server.
-- SHA256 and Encase64 packages: to create and encrypt specifics sensibles datas as hash.
-- uid2 package : to generate a random string key with a wanted length.
+- SHA256 and Encase64 packages: to create and encrypt specific and sensibles datas such as 'hash'.
+- uid2 package : to generate a random string key with a wanted length such as token or salt.
 
 ## LICENSE :
 
