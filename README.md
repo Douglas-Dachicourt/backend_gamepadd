@@ -4,6 +4,8 @@
 
 <h1>DESCRIPTION</h1>
 
+GAMEPADD's backend is an application server designed to handle authentication, user account creation, game collection management, and review publishing features. It is based on a RESTful architecture with MongoDB for data storage, and uses Node.js and Express for API development. This project is Douglas Dachicourt's first portfolio project, demonstrating skills in backend and database management.
+
 ## REQUIREMENTS :
 
 - Node.js (lastest version by preference)
