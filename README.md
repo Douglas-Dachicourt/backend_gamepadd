@@ -61,22 +61,56 @@ npx nodemon
 
 ## API ENDPOINTS (CRUD)
 
-- LOGIN ROUTE :
-  - POST /user/login: route that login an existing user.
 - SIGNUP ROUTE :
+
   - POST /user/signup: route that let a new user to register.
+    <br/> _exemple of use (through Postman):_ send a json body this way:
+
+  ```bash
+  {
+    "username": "your_username",
+    "email": "your_email",
+    "password": "your_password",
+  }
+  ```
+
+- LOGIN ROUTE :
+
+  - POST /user/login: route that login an existing user.
+    <br/> _exemple of use (through Postman):_ send a json body this way:
+
+  ```bash
+  {
+    "email": "your_email",
+    "password": "your_password"
+  }
+  ```
+
 - REVIEW ROUTES :
+
   - POST /games/:id/rewiew : route that let a registered user to leave a review.
+    <br/> _exemple of use (through Postman):_ send a json body this way after configuring the path adress (do not forget the id of the game in params + add your 'bearer' token in the headers authorization):
+
+  ```bash
+  {
+    "title": "your_title",
+    "content": "your_content"
+  }
+  ```
+
   - GET /games/:id/rewiew : route that displays all reviews available for a specific game.
+
 - COLLECTION ROUTES :
+
   - POST /games/:id/collection : route that let a registered user to add a game to a personal collection.
   - GET /games/:user/collection : route that displays all games saved by an authentified user in his collection.
+  - DELETE /games/:id/collection : route that let a registered user to delete a game from his personal collection.
 
-## TECH USED:
+## MAIN PACKAGES USED:
 
 - Express Server package: to run a basic server.
 - SHA256 and Encase64 packages: to create and encrypt specific and sensibles datas such as 'hash'.
-- uid2 package : to generate a random string key with a wanted length such as token or salt.
+- uid2 package : to generate a random string key with a wanted length such as 'token' or 'salt'.
 
 ## LICENSE :
 
